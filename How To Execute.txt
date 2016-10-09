@@ -1,0 +1,70 @@
+
+How to Run U R Project:
+--------------------------
+
+             Please observe    Steps to Run Your Application
+
+	           	Step 1.	Open SqlPlus
+		                       Enter Administrator     User Name:--------
+		                                                         Password:--------
+						                         HostString:--------
+
+                         Step 2.    SQL>create user <username>  identified  by  <password>;
+		                        SQL>grant dba to <username>;
+			                SQL>Exit;
+  
+                        Step 3.    Start---->Run--->imp--->
+	                                username:<username>/<password>@<servername>
+                                             ----Press Enter Key-----
+Import file:EXPDAT.DMP><give database dump file path>
+                                       (Example:--->   f:\xxx.dmp)
+                                         ----Press Enter Key-----
+Enter insert buffer size(min is 8192) 30720>  ---Press Enter Key---
+
+
+List Contents of Import file only(yes/no):no> Press --> n
+                                                                   ---Press Enter Key---
+							            Press -->  y
+								     ---Press Enter Key---
+							            Press -->  y
+								     ---Press Enter Key---
+							            Press -->  y
+								    
+
+-----------------------------------------------------------------------------------------------------
+
+Open Ur Project Code-->WEB-INF---->config--->open   System.properties
+
+Sea    URL=jdbc:oracle:thin:@<host>:1521:<service_name>
+
+  (For   host name,service_name  Go To  Oracle Home directory-->Ora-->NETWORK-->ADMIN-->Open    tnsnames.ora  
+
+                 sea   host=.....
+	                 service_name=,......
+		       replace  these values into above  URL)
+
+
+----------------------------------------------------------------------------------------------------------
+Deployeement:
+----------------
+
+  Copy  the code and  Paste   it in  Tomcat5.x/6.x------>webapps
+
+
+-----------------------------------------------------------------------------------------
+  Start Server  :
+---------------
+   Go To Tomcat 5.x/6.x----->bin---->double click on startup.bat  file
+
+   (Note:abserve the Tomcat Server Port Number
+
+     Ex:INFO: Starting Coyote HTTP/1.1 on port  8081 (When it will run in ur system)
+       here  port number is----> 8081)
+----------------------------------------------------------------------------------------------------------------------------------
+
+Go to Internet Explorer
+
+In Address Bar:                http://localhost:portno/<Project Name>/ --Press Enter---       -------->If Tomcat server run in u r System
+
+                                        http://<hostname>:portno/<Project Name>/--Press Enter---  -------->If Tomcat server run in Others System
+
