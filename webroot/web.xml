@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	
+	 <servlet>
+    
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.post.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewLostArticelInfoAction</servlet-name>
+    <servlet-class>com.post.action.ViewLostArticelInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAllArticelInfo</servlet-name>
+    <servlet-class>com.post.action.ViewLostArticelInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewFeedbackInfoAction</servlet-name>
+    <servlet-class>com.post.action.ViewFeedbackInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewFeedbackAction</servlet-name>
+    <servlet-class>com.post.action.ViewFeedbackAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewPostScheduleAction</servlet-name>
+    <servlet-class>com.post.action.ViewPostScheduleAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetEmpdetailsAction</servlet-name>
+    <servlet-class>com.post.action.GetEmpdetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewPostInfoAction</servlet-name>
+    <servlet-class>com.post.action.ViewPostInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSenderInfoAction</servlet-name>
+    <servlet-class>com.post.action.GetSenderInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPostmanPostsAction</servlet-name>
+    <servlet-class>com.post.action.GetPostmanPostsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetReceiverInfoAction</servlet-name>
+    <servlet-class>com.post.action.GetReceiverInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCustomerInfoAction</servlet-name>
+    <servlet-class>com.post.action.GetCustomerInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyPostAction</servlet-name>
+    <servlet-class>com.post.action.ModifyPostAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewQueryAction</servlet-name>
+    <servlet-class>com.post.action.ViewQueryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeliveryStatusAction</servlet-name>
+    <servlet-class>com.post.action.ViewDeliveryStatusAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetComplaintStatusAction</servlet-name>
+    <servlet-class>com.post.action.GetComplaintStatusAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewResponseAction</servlet-name>
+    <servlet-class>com.post.action.ViewResponseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetQueryStatusAction</servlet-name>
+    <servlet-class>com.post.action.GetQueryStatusAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLostArticleAction</servlet-name>
+    <servlet-class>com.post.action.GetLostArticleAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MaintainLostPostAction</servlet-name>
+    <servlet-class>com.post.action.MaintainLostPostAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStoreAction</servlet-name>
+    <servlet-class>com.post.action.GetStoreAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewComplaintsAction</servlet-name>
+    <servlet-class>com.post.action.ViewComplaintsAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ComplaintResponseAction</servlet-name>
+    <servlet-class>com.post.action.ComplaintResponseAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>SearchPostAction</servlet-name>
+    <servlet-class>com.post.action.SearchPostAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddLostArticalAction</servlet-name>
+    <servlet-class>com.post.action.AddLostArticalAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>AddPostDetailsAction</servlet-name>
+    <servlet-class>com.post.action.AddPostDetailsAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>AdminRegisterAction</servlet-name>
+    <servlet-class>com.post.action.AdminRegisterAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>CancelPostRecordAction</servlet-name>
+    <servlet-class>com.post.action.CancelPostRecordAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.post.action.ChangePasswordAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>ChangequestionAction</servlet-name>
+    <servlet-class>com.post.action.ChangequestionAction</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <servlet-name>ChangeStatusAction</servlet-name>
+    <servlet-class>com.post.action.ChangeStatusAction</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.post.action.ChekUserAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>DeleteFeedBackAction</servlet-name>
+    <servlet-class>com.post.action.DeleteFeedBackAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>DeliveryAction</servlet-name>
+    <servlet-class>com.post.action.DeliveryAction</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.post.action.LoginAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.post.action.LogoutAction</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <servlet-name>ModifyPostStatusAction</servlet-name>
+    <servlet-class>com.post.action.ModifyPostStatusAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>PostComplaintAction</servlet-name>
+    <servlet-class>com.post.action.PostComplaintAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>PostFeedBackAction</servlet-name>
+    <servlet-class>com.post.action.PostFeedBackAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>PostQueryAction</servlet-name>
+    <servlet-class>com.post.action.PostQueryAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>PostSolutionAction</servlet-name>
+    <servlet-class>com.post.action.PostSolutionAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.post.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.post.action.RegisterAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>SearchAtricelAction</servlet-name>
+    <servlet-class>com.post.action.SearchAtricelAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>SendResponseAction</servlet-name>
+    <servlet-class>com.post.action.SendResponseAction</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>ShedulePostAction</servlet-name>
+    <servlet-class>com.post.action.ShedulePostAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>UpdateAction</servlet-name>
+    <servlet-class>com.post.action.UpdateAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>UpdatePostRecordAction</servlet-name>
+    <servlet-class>com.post.action.UpdatePostRecordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewPostAtAction</servlet-name>
+    <servlet-class>com.post.action.ViewPostAtAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetQueryAtAction</servlet-name>
+    <servlet-class>com.post.action.GetQueryAtAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSolutionAction</servlet-name>
+    <servlet-class>com.post.action.ViewSolutionAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MaintainSenderInfoAction</servlet-name>
+    <servlet-class>com.post.action.MaintainSenderInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MaintainReceiverAction</servlet-name>
+    <servlet-class>com.post.action.MaintainReceiverAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostmanSenderAction</servlet-name>
+    <servlet-class>com.post.action.PostmanSenderAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostmanReceiverAction</servlet-name>
+    <servlet-class>com.post.action.PostmanReceiverAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateAction</servlet-name>
+    <servlet-class>com.post.action.UpdateAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPostManAction</servlet-name>
+    <servlet-class>com.post.action.GetPostManAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewPostsAction</servlet-name>
+    <servlet-class>com.post.action.ViewPostsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostManScheduleAction</servlet-name>
+    <servlet-class>com.post.action.PostManScheduleAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EmployeeRegisterAction</servlet-name>
+    <servlet-class>com.post.action.EmployeeRegisterAction</servlet-class>
+  </servlet>
+
+
+
+  
+  
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+<servlet-mapping>
+    <servlet-name>GetPostManAction</servlet-name>
+    <url-pattern>/GetPostManAction</url-pattern>
+  </servlet-mapping>
+
+
+<servlet-mapping>
+    <servlet-name>updateAction</servlet-name>
+    <url-pattern>/updateAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ViewLostArticelInfoAction</servlet-name>
+    <url-pattern>/ViewLostArticelInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAllArticelInfo</servlet-name>
+    <url-pattern>/ViewAllArticelInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewFeedbackInfoAction</servlet-name>
+    <url-pattern>/ViewFeedbackInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewFeedbackAction</servlet-name>
+    <url-pattern>/ViewFeedbackAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewPostScheduleAction</servlet-name>
+    <url-pattern>/ViewPostScheduleAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetEmpdetailsAction</servlet-name>
+    <url-pattern>/GetEmpdetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewPostInfoAction</servlet-name>
+    <url-pattern>/ViewPostInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSenderInfoAction</servlet-name>
+    <url-pattern>/GetSenderInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPostmanPostsAction</servlet-name>
+    <url-pattern>/GetPostmanPostsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetReceiverInfoAction</servlet-name>
+    <url-pattern>/GetReceiverInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCustomerInfoAction</servlet-name>
+    <url-pattern>/GetCustomerInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPostAction</servlet-name>
+    <url-pattern>/ModifyPostAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewQueryAction</servlet-name>
+    <url-pattern>/ViewQueryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeliveryStatusAction</servlet-name>
+    <url-pattern>/ViewDeliveryStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetComplaintStatusAction</servlet-name>
+    <url-pattern>/GetComplaintStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewResponseAction</servlet-name>
+    <url-pattern>/ViewResponseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetQueryStatusAction</servlet-name>
+    <url-pattern>/GetQueryStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLostArticleAction</servlet-name>
+    <url-pattern>/GetLostArticleAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MaintainLostPostAction</servlet-name>
+    <url-pattern>/MaintainLostPostAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStoreAction</servlet-name>
+    <url-pattern>/GetStoreAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewComplaintsAction</servlet-name>
+    <url-pattern>/ViewComplaintsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ComplaintResponseAction</servlet-name>
+    <url-pattern>/ComplaintResponseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchPostAction</servlet-name>
+    <url-pattern>/SearchPostAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddLostArticalAction</servlet-name>
+    <url-pattern>/AddLostArticalAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddPostDetailsAction</servlet-name>
+    <url-pattern>/AddPostDetailsAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AdminRegisterAction</servlet-name>
+    <url-pattern>/AdminRegisterAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CancelPostRecordAction</servlet-name>
+    <url-pattern>/CancelPostRecordAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChangequestionAction</servlet-name>
+    <url-pattern>/ChangequestionAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChangeStatusAction</servlet-name>
+    <url-pattern>/ChangeStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChekUserAction</servlet-name>
+    <url-pattern>/ChekUserAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteFeedBackAction</servlet-name>
+    <url-pattern>/DeleteFeedBackAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeliveryAction</servlet-name>
+    <url-pattern>/DeliveryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ModifyPostStatusAction</servlet-name>
+    <url-pattern>/ModifyPostStatusAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PostComplaintAction</servlet-name>
+    <url-pattern>/PostComplaintAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PostFeedBackAction</servlet-name>
+    <url-pattern>/PostFeedBackAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostQueryAction</servlet-name>
+    <url-pattern>/PostQueryAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PostSolutionAction</servlet-name>
+    <url-pattern>/PostSolutionAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>SearchAtricelAction</servlet-name>
+    <url-pattern>/SearchAtricelAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>SendResponseAction</servlet-name>
+    <url-pattern>/SendResponseAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ShedulePostAction</servlet-name>
+    <url-pattern>/ShedulePostAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateAction</servlet-name>
+    <url-pattern>/UpdateAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePostRecordAction</servlet-name>
+    <url-pattern>/UpdatePostRecordAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UpdatePostRecordAction</servlet-name>
+    <url-pattern>/UpdatePostRecordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewPostAtAction</servlet-name>
+    <url-pattern>/ViewPostAtAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetQueryAtAction</servlet-name>
+    <url-pattern>/GetQueryAtAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSolutionAction</servlet-name>
+    <url-pattern>/ViewSolutionAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MaintainSenderInfoAction</servlet-name>
+    <url-pattern>/MaintainSenderInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MaintainReceiverAction</servlet-name>
+    <url-pattern>/MaintainReceiverAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostmanSenderAction</servlet-name>
+    <url-pattern>/PostmanSenderAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostmanReceiverAction</servlet-name>
+    <url-pattern>/PostmanReceiverAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewPostsAction</servlet-name>
+    <url-pattern>/ViewPostsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostManScheduleAction</servlet-name>
+    <url-pattern>/PostManScheduleAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeRegisterAction</servlet-name>
+    <url-pattern>/EmployeeRegisterAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>./jsps/Home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
